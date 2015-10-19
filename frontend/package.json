@@ -11,7 +11,7 @@
   	"postinstall": "bower install",
 
   	"prestart": "npm install",
-  	"start": "http-server -a 0.0.0.0 -p 8000 -o true",
+  	"start": "http-server -a 0.0.0.0 -p 8001 -o true",
 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
