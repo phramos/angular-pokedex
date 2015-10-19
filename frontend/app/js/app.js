@@ -1,0 +1,1 @@
+var pokedexApp = angular.module('pokedexApp', ['pokedexApp']);

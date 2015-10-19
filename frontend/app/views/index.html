@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="pokedexApp">
 <head>
     <meta charset="UTF-8">
     <title>Angular Pokedex - Passo 1</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <script src="../bower_components/angular/angular.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/controllers/main.js"></script>
 </head>
-<body>
+<body ng-controller="MainCtrl">
     <ul>
-        <li>
-            <span>Bulbasaur</span>
-            <p>Description: The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows.</p>
-        </li>
-        <li>
-            <span>Ivysaur</span>
-            <p>Description: The seed on its back is filled with nutrients. The seed grows steadily larger as its body grows.</p>
-        </li>
-        <li>
-            <span>Venusaur</span>
-            <p>Description: It is able to con vert sunlight into energy. As a result, it is more powerful in the summertime.</p>
+        <li ng-repeat="pokemon in pokemons">
+            <span>{{pokemon.nome}}</span>
+            <p>{{'Description: '+ pokemon.descricao}}</p>
         </li>
     </ul>
 
