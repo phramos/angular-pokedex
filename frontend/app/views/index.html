@@ -9,11 +9,12 @@
     <script src="../js/controllers/main.js"></script>
 </head>
 <body ng-controller="MainCtrl">
-    <ul>
-        <li ng-repeat="pokemon in pokemons">
-            <span>{{pokemon.nome}}</span>
-            <p>{{'Description: '+ pokemon.descricao}}</p>
-        </li>
-    </ul>
+<ul>
+    <li ng-repeat="pokemon in pokemons">
+        <span>{{'#'+pokemon.numero + ' ' + pokemon.nome}}</span>
+
+        <p>{{'Description: '+ pokemon.descricao}}</p>
+    </li>
+</ul>
 </body>
 </html>
