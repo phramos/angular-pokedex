@@ -30,8 +30,19 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
             <form class="navbar-form navbar-right">
+                <span class="text-primary">Search: </span>
+
                 <div class="form-group">
-                    <input type="text" placeholder="Search" class="form-control" ng-model="busca">
+                    <input ng-model="busca" type="text" placeholder="Enter some text..." class="form-control">
+                </div>
+                <span class="text-primary">Order By: </span>
+
+                <div class="form-group">
+                    <select ng-model="ordem" class="form-control">
+                        <option value="numero">Number</option>
+                        <option value="nome">Name</option>
+                        <option value="descricao">Description</option>
+                    </select>
                 </div>
             </form>
         </div>
@@ -42,8 +53,8 @@
 <!--Conteúdo de listagem dos Pokemons-->
 <div class="jumbotron">
     <ul>
-        <li ng-repeat="pokemon in pokemons | filter:busca">
-            <span>{{'#'+pokemon.numero + ' ' + pokemon.nome}}</span>
+        <li ng-repeat="pokemon in pokemons | filter:busca | orderBy:ordem">
+            <h3>{{'#'+pokemon.numero + ' ' + pokemon.nome}}</h3>
 
             <p>{{'Description: '+ pokemon.descricao}}</p>
         </li>

@@ -16,4 +16,6 @@ pokedexApp.controller('MainCtrl', function ($scope) {
             'descricao': 'It is able to con vert sunlight into energy. As a result, it is more powerful in the summertime.'
         }
     ];
+
+    $scope.ordem = 'numero';
 });
