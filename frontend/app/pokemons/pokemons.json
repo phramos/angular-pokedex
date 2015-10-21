@@ -1,0 +1,38 @@
+[
+  {
+    "numero": 1,
+    "nome": "Bulbasaur"
+  },
+  {
+    "numero": 2,
+    "nome": "Ivysaur"
+  },
+  {
+    "numero": 3,
+    "nome": "Venusaur"
+  },
+  {
+    "numero": 4,
+    "nome": "Charmander"
+  },
+  {
+    "numero": 5,
+    "nome": "Charmeleon"
+  },
+  {
+    "numero": 6,
+    "nome": "Charizard"
+  },
+  {
+    "numero": 7,
+    "nome": "Squirtle"
+  },
+  {
+    "numero": 8,
+    "nome": "Wartordle"
+  },
+  {
+    "numero": 9,
+    "nome": "Blastoise"
+  }
+]

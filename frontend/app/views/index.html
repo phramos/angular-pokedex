@@ -41,7 +41,6 @@
                     <select ng-model="ordem" class="form-control">
                         <option value="numero">Number</option>
                         <option value="nome">Name</option>
-                        <option value="descricao">Description</option>
                     </select>
                 </div>
             </form>
@@ -55,8 +54,6 @@
     <ul>
         <li ng-repeat="pokemon in pokemons | filter:busca | orderBy:ordem">
             <h3>{{'#'+pokemon.numero + ' ' + pokemon.nome}}</h3>
-
-            <p>{{'Description: '+ pokemon.descricao}}</p>
         </li>
     </ul>
 </div>
